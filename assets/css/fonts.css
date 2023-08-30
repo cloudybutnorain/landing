@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'SNES';
+    src: url('/assets/fonts/SNES.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
 /*@font-face {
     font-family: 'Wotfard';
     src: url('/assets/fonts/wotfard-extralight.woff2') format('woff2');

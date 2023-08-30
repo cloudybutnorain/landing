@@ -4,7 +4,7 @@ tasks:
   apt:
     command: |
       apt-get update
-      apt-get install ruby-full build-essential zlib1g-dev curl --yes
+      apt-get install ruby-full build-essential zlib1g-dev curl git entr --yes
   tailwindcss:
     dependencies:
     - apt
@@ -37,3 +37,17 @@ tasks:
     command: |
       tailwindcss -o assets/css/tailwind.css
       bundle exec jekyll build
+  dev:
+    cache: false
+    dependencies:
+    - bundle
+    - tailwindcss
+    mount_paths:
+    - .
+    ports:
+    - 4000:4000
+    environment:
+      # https://github.com/eradman/entr/issues/3
+      ENTR_INOTIFY_WORKAROUND: "1"
+    command: |
+      git ls-files | entr -n -c -r -s 'tailwindcss -o assets/css/tailwind.css && bundle exec jekyll serve --no-watch --host=0.0.0.0'

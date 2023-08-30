@@ -3,3 +3,9 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# generated CSS
+/assets/css/tailwind.css
+
+# macOS stuff
+.DS_Store
