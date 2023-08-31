@@ -17,6 +17,7 @@ tasks:
     - tailwindcss
     input_paths:
     - site/
+    - tailwind.config.js
     output_paths:
     - site/assets/css/tailwind.css
     command: |
