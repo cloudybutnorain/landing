@@ -1,11 +1,5 @@
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
-
 # generated CSS
-/assets/css/tailwind.css
+/site/assets/css/tailwind.css
 
 # macOS stuff
 .DS_Store

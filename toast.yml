@@ -4,50 +4,39 @@ tasks:
   apt:
     command: |
       apt-get update
-      apt-get install ruby-full build-essential zlib1g-dev curl git entr --yes
+      apt-get install curl --yes
   tailwindcss:
     dependencies:
     - apt
     command: |
-      cd /usr/local/bin
       curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.3/tailwindcss-linux-x64
       chmod +x tailwindcss-linux-x64
       mv tailwindcss-linux-x64 /usr/local/bin/tailwindcss
-  ruby:
-    dependencies:
-    - apt
-    command: |
-      gem install jekyll bundler
-  bundle:
-    dependencies:
-    - ruby
-    input_paths:
-    - Gemfile
-    - Gemfile.lock
-    command: |
-      bundle install
   build:
     dependencies:
-    - bundle
     - tailwindcss
     input_paths:
-    - .
+    - site/
     output_paths:
-    - _site/
+    - site/assets/css/tailwind.css
     command: |
-      tailwindcss -o assets/css/tailwind.css
-      bundle exec jekyll build
+      tailwindcss -o site/assets/css/tailwind.css
+  apt-dev:
+    command: |
+      apt-get update
+      apt-get install python3 git entr --yes
   dev:
     cache: false
     dependencies:
-    - bundle
+    - apt
+    - apt-dev
     - tailwindcss
     mount_paths:
     - .
     ports:
-    - 4000:4000
+    - 8000:8000
     environment:
       # https://github.com/eradman/entr/issues/3
       ENTR_INOTIFY_WORKAROUND: "1"
     command: |
-      git ls-files | entr -n -c -r -s 'tailwindcss -o assets/css/tailwind.css && bundle exec jekyll serve --no-watch --host=0.0.0.0'
+      git ls-files | entr -n -c -r -s 'tailwindcss -o site/assets/css/tailwind.css && cd site && python3 -m http.server'
