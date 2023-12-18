@@ -10,14 +10,49 @@
   <link rel="stylesheet" href="/assets/css/markdown.css">
 </head>
 
-<body class="text-stone-900 bg-[#E8DED1] dark:text-stone-100 dark:bg-[#181410]">
+<body class="text-stone-900">
   <div class="w-screen flex flex-col">
-    <div class="w-full h-48 md:h-64 bg-red-800 flex items-end px-4 py-2">
-      <p class="font-['SNES'] text-6xl md:text-9xl text-[#E8DED1]">CLOUDY BUT NO RAIN</p>
+    <div class="w-full bg-[#161253] flex flex-col items-center justify-center py-8">
+      <h1 class="text-[#C6DFEF]">Cloudy But No Rain</h1>
+      <div class="text-[#C6DFEF]">
+        <img class="text-[#C6DFEF]" height="226px" width="226px" src="/assets/pictures/weathervane.svg"/>
+      </div>
+      <h3 class="text-[#C6DFEF]">--- Static Sites for the Small Web ---</h2>
     </div>
-    <div class="w-full px-5 py-16">
-      <p>A WIP static site hosting service with built-in analytics and monitoring.</p>
-      <p>Check back soon for nicer copy writing.</p>
+    <div class="w-full bg-white flex flex-row items-center justify-center">
+      <div class="max-w-[768px] py-8">
+        <h2>About</h2>
+        <p>Most ways of hosting a simple static site on the Internet today suck for individuals. They're often bloated, lock necessary features behind expensive pricing tiers, or are just plain too much work to set up and maintain -- all consequences of how they were funded by and built for <i>enterprises</i>, not you.</p>
+        <p>I wanted to change this, and create a platform for hosting websites for the "small web" -- something cheap and as easy as possible for real humans to get started with on day one, while also providing the table-stakes features you'd otherwise need to set up yourself (and pay for) on day two.</p>
+        <p>The result is Cloudy But No Rain -- a perfect home for personal blogs, organization homepages, single-page application frontends, and anything else you can stuff into an <code>index.html</code>.</p>
+      </div>
+    </div>
+    <div class="w-full bg-[#C6DFEF] flex flex-row items-center justify-center">
+      <div class="max-w-[768px] py-8">
+        <h2 class="text-[#161253]">Features</h2>
+        <ul>
+          <li><b>A fast, globally-replicated CDN</b> -- foo</li>
+          <li><b>SSL certificates and DDOS protection</b> -- including for custom domain names!</li>
+          <li><b>Built-in analytics (and soon, monitoring)</b> -- and because we use server-side access logs for this, it just works out of the box. No need for tracking pixels, any javascript at all, 3rd party services, or GDPR cookie-consent banners.</li>
+          <li><b>A familiar git-based workflow</b> -- if you've ever used Heroku, you know how nice it is to deploy your code with a simple `git push`. And if you haven't, it's just a single command from a tool probably already installed on your computer.</li>
+          <li><b>Zero big-tech bullshit</b> -- this was all made by one person (me, Brandon)! I am not Amazon, Microsoft, or Google, and CBNR deliberately avoids using any of their services, at least directly. Sleep better knowing that less of your money is going into the pockets of Jeff Bezos.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="w-full h-48 bg-white flex flex-row items-center justify-center">
+      <div>And all of it is OPEN SOURCE! Link to GH repo</div>
+    </div>
+    <div class="w-full bg-[#D96226] flex flex-row items-center justify-center">
+      <div class="max-w-[768px] py-8">
+        <h2 class="text-[#C6DFEF]">DISCLAIMER</h2>
+        <p>Most ways of hosting a simple static site on the Internet today suck for individuals. They're often bloated, lock necessary features behind expensive pricing tiers, or are just plain too much work to set up and maintain -- all consequences of how they were funded by and built for <i>enterprises</i>, not you.</p>
+      </div>
+    </div>
+    <div class="w-full h-48 bg-white flex flex-row items-center justify-center">
+      <div>(short blurb about who I am and why I built this, little photo of me in a circle, etc)</div>
+    </div>
+    <div class="w-full h-48 bg-[#161253] flex flex-row items-center justify-center">
+      <div>(footer)</div>
     </div>
   </div>
 </body>
