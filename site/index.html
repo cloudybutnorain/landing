@@ -28,15 +28,28 @@
       </div>
     </div>
     <div class="w-full bg-[#C6DFEF] flex flex-row items-center justify-center">
-      <div class="max-w-[768px] px-8 py-8">
+      <div class="w-full max-w-[768px] px-8 py-8">
         <h2 class="text-[#161253]">Features</h2>
-        <ul>
-          <li><b>A fast, globally-replicated CDN</b><br/>We use Bunny CDN to host the actual websites. This is great for you, since it means your sites are served from fast SSD storage always located near your visitors, and my servers going down won't mean your site is unavailable.</li>
-          <li><b>SSL certificates and DDOS protection</b><br/>including for custom domain names!</li>
-          <li><b>Built-in analytics (and soon, monitoring)</b><br/>and because we use server-side access logs for this, it just works out of the box. No need for tracking pixels, 3rd party services, or GDPR cookie-consent banners. Run your site Javascript-free if you want!</li>
-          <li><b>A familiar git-based workflow</b><br/>if you've ever used Heroku, you know how nice it is to deploy your code with a simple <code>git push</code>. And if you haven't, it's just a single command from a tool probably already installed on your computer.</li>
-          <li><b>Zero big-tech bullshit</b><br/>this was all made by one person (me, Brandon)! I am not Amazon, Microsoft, or Google, and CBNR deliberately avoids using any of their services, at least directly. Sleep better knowing that less of your money is going into the pockets of Jeff Bezos.</li>
-        </ul>
+        <details>
+          <summary class="select-none cursor-pointer"><b>A fast, globally-replicated CDN</b></summary>
+          <div class="mt-2">The websites of CBNR are served by <a href="#">Bunny.net</a>, via SSDs located all over the world, and folks viewing your website get their copy delivered directly from Bunny. So, your sites are faster and more reliable, and CBNR going down doesn't mean your sites are down too.</div>
+        </details>
+        <details>
+          <summary class="select-none cursor-pointer"><b>SSL certificates and DDoS protection</b></summary>
+          <div class="mt-2">These are table-stakes features you need to host a site on the public web today, which you get "for free" from our integration with the CDN. This includes SSL certificates for custom domains, which CBNR fully supports.</div>
+        </details>
+        <details open="">
+          <summary class="select-none cursor-pointer"><b>Built-in analytics (and soon, monitoring)</b></summary>
+          <div class="mt-2">Know how popular your site is over time. And because we use server-side access logs for this, it just works out of the box -- no need for tracking pixels, 3rd party services, or GDPR cookie-consent banners. Run your site Javascript-free if you want!</div>
+        </details>
+        <details>
+          <summary class="select-none cursor-pointer"><b>A familiar Git-based workflow</b></summary>
+          <div class="mt-2">If you've ever used Heroku, you know how nice it is to simply <code>git push</code> and see your code deployed. And if you haven't, it's just a single command from a tool probably already installed on your computer.</div>
+        </details>
+        <details>
+          <summary class="select-none cursor-pointer"><b>Zero big-tech bullshit</b></summary>
+          <div class="mt-2">This was all made by one person (<a href="#">me, Brandon</a>). I am not Amazon, Microsoft, or Google, and CBNR deliberately avoids using any of their services, at least directly. Support a less dystopian future for the Internet!</div>
+        </details>
       </div>
     </div>
     <div class="w-full h-48 bg-white flex flex-row items-center justify-center">
