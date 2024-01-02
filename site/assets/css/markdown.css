@@ -13,11 +13,13 @@ code, pre {
   padding: 1px 3px 1px 3px;
 }
 
+/*
 @media (prefers-color-scheme: dark) {
   code, pre {
     background-color: #525252;
   }
 }
+*/
 
 p, blockquote, ul, ol, dl, table, pre, article {
   margin: 12px 0 18px 0;
