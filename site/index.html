@@ -19,7 +19,7 @@
       <h3 class="text-[#C6DFEF] text-center">Static&nbsp;Sites for the Small&nbsp;Web</h2>
     </div>
     <div class="w-full bg-white flex flex-row items-center justify-center">
-      <div class="max-w-[768px] px-8 py-8">
+      <div class="w-full max-w-[768px] px-8 py-8">
         <h2>About</h2>
         <p>The "<a href="#">small web</a>" is a term for the less corporate, more independent side of the Internet -- the personal blogs, organization homepages, passion projects, and so on. The parts that aren't on Facebook, the parts people own themselves.</p>
         <p>Thing is, if you want to have a website like this, there aren't a ton of great options. Self-hosting is, for most people, prohibitively difficult/expensive. Free services, like Github Pages, are good but barebones, and others start free but lock table-stakes features behind "pro" tiers.</p>
@@ -30,42 +30,62 @@
     <div class="w-full bg-[#C6DFEF] flex flex-row items-center justify-center">
       <div class="w-full max-w-[768px] px-8 py-8">
         <h2 class="text-[#161253]">Features</h2>
-        <details>
-          <summary class="select-none cursor-pointer"><b>A fast, globally-replicated CDN</b></summary>
+        <details class="py-4 border-b-2 border-current">
+          <summary class="flex flex-row items-center justify-between select-none cursor-pointer">
+            <b>A fast, globally-replicated CDN</b>
+            <div>▼</div>
+          </summary>
           <div class="mt-2">The websites of CBNR are served by <a href="#">Bunny.net</a>, via SSDs located all over the world, and folks viewing your website get their copy delivered directly from Bunny. So, your sites are faster and more reliable, and CBNR going down doesn't mean your sites are down too.</div>
         </details>
-        <details>
-          <summary class="select-none cursor-pointer"><b>SSL certificates and DDoS protection</b></summary>
+        <details class="py-4 border-b-2 border-current">
+          <summary class="flex flex-row items-center justify-between select-none cursor-pointer">
+            <b>SSL certificates and DDoS protection</b>
+            <div>▼</div>
+          </summary>
           <div class="mt-2">These are table-stakes features you need to host a site on the public web today, which you get "for free" from our integration with the CDN. This includes SSL certificates for custom domains, which CBNR fully supports.</div>
         </details>
-        <details open="">
-          <summary class="select-none cursor-pointer"><b>Built-in analytics (and soon, monitoring)</b></summary>
+        <details class="py-4 border-b-2 border-current" open="">
+          <summary class="flex flex-row items-center justify-between select-none cursor-pointer">
+            <b>Built-in analytics (soon, monitoring)</b>
+            <div>▼</div>
+          </summary>
           <div class="mt-2">Know how popular your site is over time. And because we use server-side access logs for this, it just works out of the box -- no need for tracking pixels, 3rd party services, or GDPR cookie-consent banners. Run your site Javascript-free if you want!</div>
         </details>
-        <details>
-          <summary class="select-none cursor-pointer"><b>A familiar Git-based workflow</b></summary>
+        <details class="py-4 border-b-2 border-current">
+          <summary class="flex flex-row items-center justify-between select-none cursor-pointer">
+            <b>A familiar Git-based workflow</b>
+            <div>▼</div>
+          </summary>
           <div class="mt-2">If you've ever used Heroku, you know how nice it is to simply <code>git push</code> and see your code deployed. And if you haven't, it's just a single command from a tool probably already installed on your computer.</div>
         </details>
-        <details>
-          <summary class="select-none cursor-pointer"><b>Zero big-tech bullshit</b></summary>
+        <details class="py-4">
+          <summary class="flex flex-row items-center justify-between select-none cursor-pointer">
+            <b>Zero big-tech bullshit</b>
+            <div>▼</div>
+          </summary>
           <div class="mt-2">This was all made by one person (<a href="#">me, Brandon</a>). I am not Amazon, Microsoft, or Google, and CBNR deliberately avoids using any of their services, at least directly. Support a less dystopian future for the Internet!</div>
         </details>
       </div>
     </div>
-    <div class="w-full h-48 bg-white flex flex-row items-center justify-center">
-      <div>And all of it is OPEN SOURCE! Link to GH repooo</div>
+    <div class="w-full bg-white flex flex-row items-center justify-center">
+      <div class="w-full max-w-[768px] px-8 py-8 flex flex-row items-center justify-between">
+        <p>Every line of code that runs Cloudy But No Rain is written by hand (zero AI) and totally open-source under the AGPLv3 license, from Javascript to Golang to Kubernetes manifests. Go check it out for yourself on <a href="#">Github</a>!</p>
+        <img height="128px" width="128px" src="/assets/pictures/oss3.png"/>
+      </div>
     </div>
     <div class="w-full bg-[#D96226] flex flex-row items-center justify-center">
-      <div class="max-w-[768px] py-8">
-        <h2 class="text-[#C6DFEF]">DISCLAIMER</h2>
-        <p>This is a total WIP, there are many things that do not work, the price reflects the quality in this case (free and bad), use at your own risk, etc etc</p>
+      <div class="w-full max-w-[768px] px-8 py-8">
+        <h2>Warning</h2>
+        <p>At the moment, Cloudy But No Rain is a <b>work in progress</b>.</p>
+        <p>If you want to use it, please expect a constantly-shifting user interface, documentation that's missing some pieces around "advanced" features, and even occasional loss of historical analytics data (though I will try my best to avoid this unless it's totally necessary).</p>
+        <p>On the plus side, CBNR is also free to use while it's in development!</p>
       </div>
     </div>
     <div class="w-full h-48 bg-white flex flex-row items-center justify-center">
       <div>(short blurb about who I am and why I built this, little photo of me in a circle, etc)</div>
     </div>
-    <div class="w-full h-48 bg-[#161253] flex flex-row items-center justify-center">
-      <div>(footer)</div>
+    <div class="w-full h-12 bg-[#161253] flex flex-row items-center justify-center">
+      <div>(I would put a copyright in this footer if I knew how that worked)</div>
     </div>
   </div>
 </body>
