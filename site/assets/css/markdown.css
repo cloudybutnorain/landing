@@ -63,6 +63,11 @@ summary {
   list-style: none;
 }
 
+/* same as the above, but safari is special snowflake */
+::-webkit-details-marker {
+   display:none;
+}
+
 hr {
   margin: 24px 0 24px 0;
 }
