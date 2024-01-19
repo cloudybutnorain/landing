@@ -36,17 +36,26 @@ h1 {
   margin: 18px 0 18px 0;
 }
 
+/*h1 {
+  font-family: 'Clicker Script';
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 96px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transform: rotate(-4deg);
+}*/
+
 h2 {
   font-weight: 600;
   font-size: 32px;
-  margin: 18px 0 18px 0;
+  margin: 18px 0 24px 0;
 }
 
 h3 {
-  font-weight: 600;
+  font-weight: 300;
   font-size: 24px;
-  line-height: 30px;
-  margin: 24px 0 0 0;
+  line-height: 24px;
 }
 
 h4 {
