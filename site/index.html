@@ -9,6 +9,25 @@
   <link rel="stylesheet" href="/assets/css/fonts.css">
   <link rel="stylesheet" href="/assets/css/tailwind.css">
   <link rel="stylesheet" href="/assets/css/markdown.css">
+  <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+  <script type="text/javascript">
+    Paddle.Environment.set("sandbox");
+    Paddle.Initialize({token: "test_dc125c1e502397eb0ff6d83e306"});
+    // define items
+    let itemsList = [
+      {
+        priceId: "pri_01j885n4xes6e0h7rxg0pdeg0p",
+        quantity: 1
+      }
+    ];
+
+    // open checkout
+    function openCheckout(items){
+      Paddle.Checkout.open({
+        items: items
+      });
+    }
+  </script>
 </head>
 
 <body class="text-stone-900">
@@ -110,6 +129,7 @@
         <p>At the moment, Ecstatic Sites is a <b>work in progress</b>.</p>
         <p>If you want to use it, please expect a constantly-shifting user interface, documentation that's missing some pieces around "advanced" features, and even occasional loss of historical analytics data (though I will try my best to avoid this unless it's totally necessary).</p>
         <p>Ecstatic is also <b>free to use</b> while it's in alpha. If you'd like an account, just <a href="mailto:brandon@willett.io">send me an email</a> and I'll get you an invite (this small hurdle is just my attempt to keep misuse to a minimum).</p>
+        <p><a href='#' onclick="openCheckout(itemsList)">Sign up now</a></p>
       </div>
     </div>
     <!-- Links -->
