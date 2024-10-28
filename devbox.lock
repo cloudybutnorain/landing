@@ -1,0 +1,53 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "tailwindcss@latest": {
+      "last_modified": "2024-10-26T14:05:56Z",
+      "resolved": "github:NixOS/nixpkgs/4e0eec54db79d4d0909f45a88037210ff8eaffee#tailwindcss",
+      "source": "devbox-search",
+      "version": "3.4.14",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/kkibamam3ximvcsafj4jjnfbx3clmbxk-tailwindcss-3.4.14",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/kkibamam3ximvcsafj4jjnfbx3clmbxk-tailwindcss-3.4.14"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/5qgk7h4kpqccg84865wlwaaf6bysgw24-tailwindcss-3.4.14",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/5qgk7h4kpqccg84865wlwaaf6bysgw24-tailwindcss-3.4.14"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/hr1kakizj367cimq2x3c8zp164ajdlzs-tailwindcss-3.4.14",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/hr1kakizj367cimq2x3c8zp164ajdlzs-tailwindcss-3.4.14"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/y783fiwrppfbz622cjiy9a0xzn3mpv4y-tailwindcss-3.4.14",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/y783fiwrppfbz622cjiy9a0xzn3mpv4y-tailwindcss-3.4.14"
+        }
+      }
+    }
+  }
+}
