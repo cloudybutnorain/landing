@@ -24,6 +24,13 @@
     // open checkout
     function openCheckout(items){
       Paddle.Checkout.open({
+        settings: {
+          displayMode: "overlay",
+          theme: "dark",
+          locale: "en",
+          successUrl: "https://paddle.com/thankyou",
+          showAddDiscounts: false
+        },
         items: items
       });
     }
@@ -129,7 +136,7 @@
         <p>At the moment, Ecstatic Sites is a <b>work in progress</b>.</p>
         <p>If you want to use it, please expect a constantly-shifting user interface, documentation that's missing some pieces around "advanced" features, and even occasional loss of historical analytics data (though I will try my best to avoid this unless it's totally necessary).</p>
         <p>Ecstatic is also <b>free to use</b> while it's in alpha. If you'd like an account, just <a href="mailto:brandon@willett.io">send me an email</a> and I'll get you an invite (this small hurdle is just my attempt to keep misuse to a minimum).</p>
-        <p><a href='#' onclick="openCheckout(itemsList)">Sign up now</a></p>
+        <p><a href='#' onclick="openCheckout(itemsList)">Do not click me</a></p>
       </div>
     </div>
     <!-- Links -->
